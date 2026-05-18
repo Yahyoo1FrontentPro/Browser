@@ -1,5 +1,5 @@
 services:
-  - type: web_service
+  - type: web
     name: aura-nexus-dashboard
     env: node
     plan: starter
@@ -17,7 +17,7 @@ services:
       - key: OWNER_ID
         value: "SUPER_ADMIN_777"
 
-  - type: background_worker
+  - type: worker
     name: aura-nexus-log-worker
     env: node
     plan: starter
